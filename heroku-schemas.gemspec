@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ['lib']
 
-  s.add_dependency 'heroku', '~> 3.0.0'
+#  s.add_dependency 'heroku', '~> 3.0.0'
   s.add_dependency 'heroku-api'
   s.add_dependency 'pg'
   s.add_dependency 'activerecord', '3.2.0'
