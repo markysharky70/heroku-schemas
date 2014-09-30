@@ -1,6 +1,6 @@
 require 'active_record'
 require 'active_support/core_ext'
-require 'heroku-api'
+require 'platform-api'
 
 require 'heroku-schemas/database'
 require 'heroku-schemas/current_database'
