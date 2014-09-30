@@ -71,7 +71,7 @@ module HerokuSchemas
     end
 
     def app_config_variables(app)
-      @heroku.get_config_vars(app).body
+      @heroku.config_var.info(app)
     end
 
     def get_base_database_url(url)

@@ -98,12 +98,12 @@ module HerokuSchemas
     end
 
     def app_database_url(app)
-      vars = @heroku.get_config_vars(app).body
+      vars = @heroku.config_var_info(app)
       vars['DATABASE_URL']
     end
 
     def set_app_database_url(app, url)
-      @heroku.put_config_vars(app, 'DATABASE_URL' => url)
+      @heroku.config_var.update(app, 'DATABASE_URL' => url)
     end
   end
 end
